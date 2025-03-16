@@ -18,6 +18,20 @@ function Navbar() {
           {isOpen ? <X size={28} className="text-white" /> : <Menu size={28} />}
         </button>
 
+        <ul className="hidden md:flex gap-6 items-center">
+          {["Home", "About", "Event", "Locations"].map((item, index) => (
+            <li key={index}>
+              <Link
+                href={"#"}
+                className="relative font-medium text-gray-700 transition-all duration-300 hover:text-[#4354a4] 
+                after:absolute after:w-full after:h-0.5 after:bg-[#4354a4] after:bottom-0 after:left-0 
+                after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
+              >
+                {item}
+              </Link>
+            </li>
+          ))}
+        </ul>
         <AnimatePresence>
           {isOpen && (
             <motion.div
@@ -26,12 +40,10 @@ function Navbar() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
               className="fixed inset-0 bg-black/70 bg-opacity-50 z-40"
-              onClick={() => setIsOpen(false)} // اغلاق عند الضغط على الخلفية
+              onClick={() => setIsOpen(false)} 
             />
           )}
         </AnimatePresence>
-
-        {/* القائمة المنبثقة */}
         <AnimatePresence>
           {isOpen && (
             <motion.ul
@@ -64,8 +76,6 @@ function Navbar() {
             </motion.ul>
           )}
         </AnimatePresence>
-
-        {/* زر Contact Us */}
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
           <Link
             href={"#"}
