@@ -3,6 +3,7 @@ import Hero from "@/components/hero";
 import LoremIpsum from "@/components/LoremIpsum";
 import Nav from "@/components/nav";
 import Reviews from "@/components/Reviews";
+import Event from "@/components/Event";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
   <Reviews/>
   <About/>
   <LoremIpsum/>
+  <Event/>
   </>
 
   );

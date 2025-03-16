@@ -1,53 +1,58 @@
 import React from "react";
 import Image from "next/image";
 
-const Lorem = [
+const events = [
   {
     id: 1,
-    title: "Lorem ipsum dolor",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "Music Festivals Around the World",
+    text: "Experience the best music festivals in breathtaking locations, from Coachella in the USA to Tomorrowland in Belgium.",
     image: "/Icon8.png",
   },
   {
     id: 2,
-    title: "Lorem ipsum dolor",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "Luxury Beach Parties",
+    text: "Enjoy exclusive beach parties with world-class DJs, vibrant atmospheres, and stunning ocean views in Ibiza and Miami.",
     image: "/Icosssn.png",
   },
   {
     id: 3,
-    title: "Lorem ipsum dolor",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "Cultural Tourism Adventures",
+    text: "Immerse yourself in diverse cultures by exploring historical sites, traditional festivals, and unique local experiences worldwide.",
     image: "/Ic121on.png",
   },
   {
     id: 4,
-    title: "Lorem ipsum dolor",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "Exclusive Nightlife Experiences",
+    text: "Discover high-end clubs, rooftop bars, and VIP events in iconic cities like Dubai, Las Vegas, and Paris.",
     image: "/Icon.png",
   },
 ];
 
-function LoremIpsum() {
+function EventsSection() {
   return (
     <main className="flex flex-col items-center justify-center py-12">
-      <h1 className="text-[#4354a4] text-xl font-bold mb-6">Lorem Ipsum</h1>
+      <h1 className="text-[#4354a4] text-xl font-bold mb-6">Unforgettable Events & Travel Experiences</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {Lorem.map((item) => (
-          <div key={item.id} className="relative flex flex-col items-center text-center">
-            <Image src="/Section.png" alt="Section Background" width={500} height={145} className="rounded-lg" />
+        {events.map((event) => (
+          <div key={event.id} className="relative flex flex-col items-center text-center">
+            <Image src="/Section.png" alt="Event Background" width={500} height={145} className="rounded-lg" />
             <div className="absolute inset-0 flex items-center px-6">
-              <Image src={item.image} alt="Icon" width={75} height={75} className="mr-4" />
+              <Image src={event.image} alt="Event Icon" width={75} height={75} className="mr-4" />
               <div className="text-left">
-                <h2 className="text-[#111633] text-[20px] font-medium">{item.title}</h2>
-                <p className="text-[#595959] text-sm mt-2">{item.text}</p>
+                <h2 className="text-[#111633] text-[20px] font-medium">{event.title}</h2>
+                <p className="text-[#595959] text-sm mt-2">{event.text}</p>
               </div>
             </div>
           </div>
         ))}
       </div>
+      <p className="text-[#595959] text-center mt-7 w-[75%] text-[15px]">
+        Whether you&apos;re looking for thrilling music festivals, vibrant beach parties, cultural adventures, or unforgettable nightlife, 
+        the world offers endless experiences for every traveler. Explore stunning destinations, enjoy world-class entertainment, 
+        and create memories that last a lifetime.
+      </p>
     </main>
   );
 }
 
-export default LoremIpsum;
+export default EventsSection;
