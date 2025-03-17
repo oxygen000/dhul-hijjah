@@ -53,7 +53,7 @@ function About() {
       </div>
 
       <div ref={imageRef} className="md:w-1/2 flex justify-center">
-        <Image src="/Rectangle.png" alt="Cloud Right" width={400} height={250} />
+        <Image src="/Group10.png" alt="Cloud Right" width={400} height={250} />
       </div>
     </main>
   );

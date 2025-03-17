@@ -4,6 +4,7 @@ import LoremIpsum from "@/components/LoremIpsum";
 import Nav from "@/components/nav";
 import Reviews from "@/components/Reviews";
 import Event from "@/components/Event";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
   <About/>
   <LoremIpsum/>
   <Event/>
+
+  <Footer/>
   </>
 
   );
