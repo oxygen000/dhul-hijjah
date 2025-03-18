@@ -44,52 +44,40 @@ function Hero() {
         </div>
 
         <div className="w-full md:w-1/2 space-y-6 mt-6 md:mt-0">
-          <div className="relative w-full max-w-xs md:max-w-full mx-auto">
-            <Image
-              src="/Line.png"
-              alt="Line Design"
-              width={404}
-              height={174}
-              className="w-full"
-            />
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-opacity-40 text-center px-4">
-              <h2 className="text-lg md:text-2xl font-semibold">
-                What is Dhul Hijjah?
+          {["What is Dhul Hijjah?", "Why is it important?"].map((title, index) => (
+            <div key={index} className="relative w-full max-w-xs md:max-w-full mx-auto p-6 text-center  rounded-lg">
+              <div className="absolute top-0 left-0 w-full flex justify-between">
+                <div className="w-[35%] border-t-4 border-[#4354a4]"></div>
+                <div className="w-[35%] border-t-4 border-[#4354a4]"></div>
+              </div>
+              <div className="absolute top-0 right-0 h-full flex flex-col justify-between">
+                <div className="h-[100%] border-r-4 border-[#4354a4]"></div>
+                <div className="h-[100%] border-r-4 border-[#4354a4]"></div>
+              </div>
+
+              <div className="absolute bottom-0 right-0 w-full flex justify-between">
+                <div className="w-[35%] border-b-4 border-[#4354a4]"></div>
+                <div className="w-[35%] border-b-4 border-[#4354a4]"></div>
+              </div>
+              <div className="absolute bottom-0 left-0 h-full flex flex-col justify-between">
+                <div className="h-[100%] border-l-4 border-[#4354a4]"></div>
+                <div className="h-[100%] border-l-4 border-[#4354a4]"></div>
+              </div>
+
+              <h2 className="text-lg md:text-2xl font-semibold text-[#4354a4]">
+                {title}
               </h2>
-              <p className="mt-2 text-xs md:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <p className="mt-2 text-xs md:text-base text-gray-700">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
+          ))}
+
+          <div className="mt-4 flex justify-center">
+            <button className="border-2 border-[#4354a4] text-[#4354a4] px-4 py-2 md:px-6 md:py-3 rounded-md font-semibold hover:bg-[#4354a4] hover:text-white transition-all duration-300 w-full max-w-[250px]">
+              LEARN MORE
+            </button>
           </div>
-
-          <div className="relative w-full max-w-xs md:max-w-full mx-auto">
-            <Image
-              src="/Line.png"
-              alt="Line Design"
-              width={404}
-              height={174}
-              className="w-full"
-            />
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-opacity-40 text-center px-4">
-              <h2 className="text-lg md:text-2xl font-semibold">
-                What is Dhul Hijjah?
-              </h2>
-              <p className="mt-2 text-xs md:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          
- 
-</div>
-<div className="mt-4 flex justify-center">
-    <button className="border-2 border-[#4354a4] text-[#4354a4] px-4 py-2 md:px-6 md:py-3 rounded-md font-semibold hover:bg-[#4354a4] hover:text-white transition-all duration-300 w-full max-w-[250px]">
-      LEARN MORE
-    </button>
-  </div>
-
-         
         </div>
       </div>
 
