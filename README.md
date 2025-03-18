@@ -1,8 +1,16 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌙 Dhul Hijjah - The Important Ten Days  
 
-## Getting Started
+Welcome to **Dhul Hijjah - The Important Ten Days**, a beautifully designed and interactive website that highlights the significance of the **first ten days of Dhul Hijjah**.  
 
-First, run the development server:
+This project is built using:  
+✅ **Next.js** - A powerful React framework  
+✅ **Tailwind CSS** - Modern and responsive UI styling  
+✅ **Framer Motion** - Smooth animations and transitions  
+✅ **gsap** - Smooth animations and transitions  
+
+## 🚀 Getting Started  
+
+To run the project locally, follow these steps:  
 
 ```bash
 npm run dev
@@ -12,25 +20,49 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then, open your browser and go to:
+👉 http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🖼️ Screenshots
+Home Page
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Animation Effect
 
-## Learn More
+📌 Features
+🔹 Engaging and modern UI
+🔹 Smooth animations with Framer Motion
+🔹 Fully responsive design
+🔹 Fast performance and SEO-friendly
 
-To learn more about Next.js, take a look at the following resources:
+🎯 Live Demo
+Check out the live version of the project here:
+👉 Live Demo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📚 Learn More About Next.js
+📖 Official Next.js Documentation
+🎓 Learn Next.js Step by Step
+💻 Next.js GitHub Repository
+🚀 Deployment
+You can deploy the project easily on Vercel using this link:
+👉 Deploy on Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+📩 Contributing
+We welcome contributions! If you want to improve this project, feel free to:
+✅ Fork the repository
+✅ Create a new branch
+✅ Submit a pull request
 
-## Deploy on Vercel
+🔗 GitHub Repository: Your Repository Link
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🎨 Designed & Developed by [Abdel Hamed Reda] 🚀
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Home Page  
+![Home Page Screenshot](public/HomePage.jpg)  
+
+
+### 🔹 Things You Need to Update:
+1. Replace **`https://dhul-hijjah.vercel.app/`** with your actual deployed project link.
+2. Replace **`https://github.com/oxygen000`** with your GitHub repository link.
+
+
