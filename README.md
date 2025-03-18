@@ -2,40 +2,57 @@
 
 Welcome to **Dhul Hijjah - The Important Ten Days**, a beautifully designed and interactive website that highlights the significance of the **first ten days of Dhul Hijjah**.  
 
+## 🚀 Tech Stack  
 This project is built using:  
 ✅ **Next.js** - A powerful React framework  
 ✅ **Tailwind CSS** - Modern and responsive UI styling  
 ✅ **Framer Motion** - Smooth animations and transitions  
-✅ **gsap** - Smooth animations and transitions  
+✅ **GSAP** - Advanced animation library for enhanced effects  
+
+---
+
+## 📸 Screenshots  
+
+### 🏠 Home Page  
+![Home Page Screenshot](public/HomePage.jpg)  
+
+
+---
 
 ## 🚀 Getting Started  
 
 To run the project locally, follow these steps:  
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+# Clone the repository
+git clone https://github.com/oxygen000/dhul-hijjah.git
+
+# Navigate to the project directory
+cd dhul-hijjah
+
+# Install dependencies
+npm install
 # or
 bun dev
+
+# Run the development server
+npm run dev
+
+# or
+bun dev
+
+---
 
 Then, open your browser and go to:
 👉 http://localhost:3000
 
-🖼️ Screenshots
-Home Page
-
-Animation Effect
-
 📌 Features
 🔹 Engaging and modern UI
-🔹 Smooth animations with Framer Motion
+🔹 Smooth animations with Framer Motion & GSAP
 🔹 Fully responsive design
 🔹 Fast performance and SEO-friendly
 
-🎯 Live Demo
+🌍 Live Demo
 Check out the live version of the project here:
 👉 Live Demo
 
@@ -43,6 +60,7 @@ Check out the live version of the project here:
 📖 Official Next.js Documentation
 🎓 Learn Next.js Step by Step
 💻 Next.js GitHub Repository
+
 🚀 Deployment
 You can deploy the project easily on Vercel using this link:
 👉 Deploy on Vercel
@@ -53,16 +71,6 @@ We welcome contributions! If you want to improve this project, feel free to:
 ✅ Create a new branch
 ✅ Submit a pull request
 
-🔗 GitHub Repository: Your Repository Link
+🔗 GitHub Repository: GitHub Link
 
 🎨 Designed & Developed by [Abdel Hamed Reda] 🚀
-
-### Home Page  
-![Home Page Screenshot](public/HomePage.jpg)  
-
-
-### 🔹 Things You Need to Update:
-1. Replace **`https://dhul-hijjah.vercel.app/`** with your actual deployed project link.
-2. Replace **`https://github.com/oxygen000`** with your GitHub repository link.
-
-
