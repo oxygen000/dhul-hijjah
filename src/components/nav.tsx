@@ -76,10 +76,10 @@ function Navbar() {
             </motion.ul>
           )}
         </AnimatePresence>
-        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+        <motion.div >
           <Link
             href={"#"}
-            className="hidden md:block bg-[#111633] font-medium text-white px-5 py-2 rounded-md transition-transform"
+            className="hidden md:block bg-[#111633] font-medium text-white px-5 py-2"
           >
             Contact Us
           </Link>

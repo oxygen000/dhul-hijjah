@@ -3,24 +3,24 @@ import React, { useState } from "react";
 import { IoArrowForward, IoArrowBackOutline } from "react-icons/io5";
 import { motion} from "framer-motion";
 
-const reviews = [
-  { id: 1, title: "Amazing Experience!", text: "Excellent service! I really enjoyed the experience.", rating: 5 },
-  { id: 2, title: "Fast & Reliable", text: "High-quality product and fast delivery. Very satisfied!", rating: 4 },
-  { id: 3, title: "Great Support", text: "The support team is very helpful and responsive.", rating: 5 },
-  { id: 4, title: "Highly Recommended", text: "I highly recommend this service, it's fantastic!", rating: 5 },
-  { id: 5, title: "Professional & Affordable", text: "Very professional service and reasonable prices.", rating: 4 },
+const advice = [
+  { id: 1, title: "Amazing Experience!", text: "Excellent service! I really enjoyed the experience."  },
+  { id: 2, title: "Fast & Reliable", text: "High-quality product and fast delivery. Very satisfied!" },
+  { id: 3, title: "Great Support", text: "The support team is very helpful and responsive." },
+  { id: 4, title: "Highly Recommended", text: "I highly recommend this service, it's fantastic!" },
+  { id: 5, title: "Professional & Affordable", text: "Very professional service and reasonable prices." },
 ];
 
-function Reviews() {
+function Advice() {
   const [index, setIndex] = useState(0);
   const itemsPerPage = 3;
 
   const handleNext = () => {
-    setIndex((prev) => (prev + 1) % (reviews.length - itemsPerPage + 1));
+    setIndex((prev) => (prev + 1) % (advice.length - itemsPerPage + 1));
   };
 
   const handlePrev = () => {
-    setIndex((prev) => (prev - 1 + (reviews.length - itemsPerPage + 1)) % (reviews.length - itemsPerPage + 1));
+    setIndex((prev) => (prev - 1 + (advice.length - itemsPerPage + 1)) % (advice.length - itemsPerPage + 1));
   };
 
   return (
@@ -41,14 +41,13 @@ function Reviews() {
           exit={{ opacity: 0, x: -50 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
         >
-          {reviews.slice(index, index + itemsPerPage).map((review) => (
+          {advice.slice(index, index + itemsPerPage).map((advice) => (
             <motion.div
-              key={review.id}
+              key={advice.id}
               className="bg-white w-[260px] sm:w-[300px] h-[260px] rounded-xl shadow-md flex flex-col items-center justify-center text-center p-5 transition-all"
             >
-              <h3 className="text-gray-900 font-semibold text-lg sm:text-xl mb-2">{review.title}</h3>
-              <div className="text-yellow-500 text-lg sm:text-xl mb-2">{"★".repeat(review.rating)}</div>
-              <p className="text-gray-600 text-sm sm:text-base">{review.text}</p>
+              <h3 className="text-gray-900 font-semibold text-lg sm:text-xl mb-2">{advice.title}</h3>
+              <p className="text-gray-600 text-sm sm:text-base">{advice.text}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -65,4 +64,4 @@ function Reviews() {
   );
 }
 
-export default Reviews;
+export default Advice;

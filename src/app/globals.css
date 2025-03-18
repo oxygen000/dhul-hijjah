@@ -7,5 +7,30 @@ body {
   background-position: center;  
   background-repeat: no-repeat; 
   background-attachment: fixed; 
+  --sb-track-color: #ffffff;
+  --sb-thumb-color: #4354a4;
+  --sb-size: 12px;
 }
 
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 1px;
+  
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
