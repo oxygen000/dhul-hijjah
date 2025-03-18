@@ -19,6 +19,30 @@ This project is built using:
 
 ---
 
+## 🌍 Live Demo  
+Check out the live version of the project here:  
+👉 [Live Demo](https://dhul-hijjah.vercel.app/)  
+
+## 📚 Learn More About Next.js  
+📖 [Official Next.js Documentation](https://nextjs.org/docs)  
+🎓 [Learn Next.js Step by Step](https://nextjs.org/learn)  
+💻 [Next.js GitHub Repository](https://github.com/vercel/next.js)  
+
+## 🚀 Deployment  
+You can deploy the project easily on Vercel using this link:  
+👉 [Deploy on Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)  
+
+## 📩 Contributing  
+We welcome contributions! If you want to improve this project, feel free to:  
+✅ Fork the repository  
+✅ Create a new branch  
+✅ Submit a pull request  
+
+🔗 **GitHub Repository:** [GitHub Link](https://github.com/oxygen000/dhul-hijjah)  
+
+
+---
+
 ## 🚀 Getting Started  
 
 To run the project locally, follow these steps:  
@@ -41,36 +65,3 @@ npm run dev
 # or
 bun dev
 
----
-
-Then, open your browser and go to:
-👉 http://localhost:3000
-
-📌 Features
-🔹 Engaging and modern UI
-🔹 Smooth animations with Framer Motion & GSAP
-🔹 Fully responsive design
-🔹 Fast performance and SEO-friendly
-
-🌍 Live Demo
-Check out the live version of the project here:
-👉 Live Demo
-
-📚 Learn More About Next.js
-📖 Official Next.js Documentation
-🎓 Learn Next.js Step by Step
-💻 Next.js GitHub Repository
-
-🚀 Deployment
-You can deploy the project easily on Vercel using this link:
-👉 Deploy on Vercel
-
-📩 Contributing
-We welcome contributions! If you want to improve this project, feel free to:
-✅ Fork the repository
-✅ Create a new branch
-✅ Submit a pull request
-
-🔗 GitHub Repository: GitHub Link
-
-🎨 Designed & Developed by [Abdel Hamed Reda] 🚀
